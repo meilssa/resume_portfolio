@@ -1,0 +1,230 @@
+@import url("https://webfontworld.github.io/woori/Wooridaum.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Wooridaum";
+}
+* body {
+  background-color: #f3d8c7;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header .h_inner {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d0b8ac;
+}
+header .h_inner h1 {
+  width: 5%;
+  height: 100%;
+}
+header .h_inner h1 a {
+  font-size: 24px;
+  line-height: 8vh;
+  text-align: center;
+  color: #fbfefb;
+}
+header .h_inner h1 a:hover {
+  text-decoration: underline;
+}
+header .h_inner .h_menu {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+header .h_inner .h_menu li {
+  width: 85px;
+  height: 100%;
+  text-align: center;
+}
+header .h_inner .h_menu li a {
+  color: #fbfefb;
+  font-size: 17px;
+  line-height: 8vh;
+}
+header .h_inner .h_menu li a:hover {
+  text-decoration: underline;
+}
+header .h_inner #h_gnb {
+  width: 10%;
+  position: relative;
+}
+header .h_inner #h_gnb h2 {
+  font-size: 14px;
+  color: #efe5dc;
+  cursor: pointer;
+}
+header .h_inner #h_gnb h2 i {
+  margin-left: 10px;
+}
+header .h_inner #h_gnb > li {
+  opacity: 0;
+  transition: 0.2s;
+}
+header .h_inner #h_gnb > li ul {
+  position: absolute;
+  top: 150%;
+  padding: 5px 10px;
+  border: 1px solid #9c8a81;
+}
+header .h_inner #h_gnb > li ul li {
+  padding: 5px;
+  border-bottom: 1px solid #9c8a81;
+  font-size: 14px;
+}
+header .h_inner #h_gnb > li ul li a {
+  color: #fff;
+}
+header .h_inner #h_gnb > li ul li:last-child {
+  border-bottom: none;
+}
+header .h_inner #h_gnb > li ul li:hover a {
+  color: #9c8a81;
+}
+header .h_inner #h_gnb > li.h_on {
+  opacity: 1;
+}
+
+footer {
+  width: 100%;
+  height: 20vh;
+  background-color: #fff;
+}
+footer .f_inner {
+  width: 1180px;
+  height: 10vh;
+  margin: 0 auto;
+}
+footer .f_inner .f_logo {
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .f_inner .f_logo a {
+  font-size: 25px;
+  color: #f3d8c7;
+  padding: 10px;
+}
+footer .f_inner .f_logo a:hover {
+  color: #9c8a81;
+}
+footer .f_inner .f_titleBox {
+  height: 7vh;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  font-size: 12px;
+}
+footer .f_inner .f_titleBox a {
+  color: #f3d8c7;
+  letter-spacing: -1px;
+}
+footer .f_inner .f_titleBox a:hover {
+  color: #9c8a81;
+}
+footer .f_inner p {
+  display: flex;
+  justify-content: center;
+  color: #f3d8c7;
+}
+
+.main {
+  width: 100%;
+  height: 92vh;
+}
+.main .main_titleBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1180px;
+  height: 100%;
+  margin: 0 auto;
+  gap: 30px;
+}
+.main .main_titleBox h3 {
+  width: 759.31px;
+  height: 50px;
+  font-size: 40px;
+  line-height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .main_titleBox h3 b:hover {
+  font-size: 50px;
+}
+.main .main_titleBox h3 b:nth-of-type(5), .main .main_titleBox h3 b:nth-of-type(13) {
+  margin-right: 15px;
+}
+.main .main_titleBox p {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.main .main_titleBox p span {
+  color: #8e7d75;
+  cursor: url(../img/cursor.png) 55 35, default;
+}
+
+.main_lgImg {
+  width: 100%;
+  height: 100vh;
+  border-top: 1px solid #fff;
+  position: relative;
+}
+.main_lgImg ul {
+  width: 100%;
+  height: 100%;
+}
+.main_lgImg ul li {
+  height: 16.6666666667%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+.main_lgImg ul li .logo {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+.main_lgImg ul li .logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.main_lgImg ul li .main_sub {
+  width: 80%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  left: -9999px;
+  transition: 0.5s;
+}
+.main_lgImg ul li .main_sub img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.main_lgImg ul li .main_sub.main_on {
+  top: 0px;
+  left: 250px;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

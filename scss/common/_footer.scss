@@ -1,0 +1,43 @@
+footer {
+	width: 100%;
+	height: 20vh;
+	background-color: #fff;
+	.f_inner {
+		width: 1180px;
+		height: 10vh;
+		margin: 0 auto;
+		.f_logo {
+			height: 10vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			a {
+				font-size: 25px;
+				color: #f3d8c7;
+				padding: 10px;
+				&:hover {
+					color: #9c8a81;
+				}
+			}
+		}
+		.f_titleBox {
+			height: 7vh;
+			display: flex;
+			gap: 40px;
+			justify-content: center;
+			font-size: 12px;
+			a {
+				color: #f3d8c7;
+				letter-spacing: -1px;
+				&:hover {
+					color: #9c8a81;
+				}
+			}
+		}
+		p {
+			display: flex;
+			justify-content: center;
+			color: #f3d8c7;
+		}
+	}
+}
